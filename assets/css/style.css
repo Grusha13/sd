@@ -183,7 +183,7 @@ header .navbar .support a:hover {
 @media screen and (max-width: 768px) {
   header .navbar-collapse {
     position: absolute;
-    top: 90px;
+    top: 80px;
     background-color: #ffffff;
     left: 0;
     width: 100%;
