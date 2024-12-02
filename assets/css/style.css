@@ -188,6 +188,7 @@ header .navbar .support a:hover {
     left: 0;
     width: 100%;
     padding: 20px 10px;
+    z-index: 99;
   }
   header .support {
     position: absolute;
