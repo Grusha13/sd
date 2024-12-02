@@ -185,6 +185,10 @@ header{
             width: 100%;
             padding: 20px 10px;
             z-index: 99;
+
+            .nav-item{
+                margin: 5px 0;
+            }
         }
 
         .support{
@@ -464,6 +468,12 @@ header{
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .content{
+            margin: 10px 0;
+        }
+    }
 }
 
 .faq{
@@ -519,6 +529,19 @@ header{
                 font-size: 16px;
 
             }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &::before{
+            opacity: 0.5;
+            right: 0;
+            z-index: 0;
+        }
+        &::after{
+            opacity: 0.3;
+            z-index: 0;
+            left: -10%;
         }
     }
 }
