@@ -16,11 +16,19 @@ $(document).ready(function () {
       $(".navbar").removeClass("fixed");
     }
 
-    var mobMenu = $("#navbar2");
+    var mobMenu = $(".mob-menu-wrapper");
     var mobMenuOffset = mobMenu.offset().top;
     var windowHeight = $(window).height();
 
-    // Add the fixed class when the scroll reaches the element
+    var scrollPos = $(window).scrollTop();
+        mobMenu.find(".nav-link").each(function () {
+            var sectionOffset = $($(this).attr("href")).offset().top - 80; // Adjust offset for sticky top
+            if (scrollPos >= sectionOffset) {
+                mobMenu.find(".nav-link").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+
     if (scrollPos + windowHeight >= mobMenuOffset) {
         $(".mob-menu-wrapper").addClass("fixed-menu");
     } else {
@@ -42,6 +50,28 @@ $(document).ready(function () {
     }
   });
 
+  var mobMenuWrapper = $(".mob-menu-wrapper");
+  var navLinks = $(".mob-menu .nav-link");
+
+  $(window).on("activate.bs.scrollspy", function () {
+      var activeLink = $(".mob-menu .nav-link.active");
+
+      if (activeLink.length) {
+          var mobMenuScroll = mobMenuWrapper.scrollLeft();
+          var linkPosition = activeLink.position().left + mobMenuScroll - (mobMenuWrapper.width() / 2) + (activeLink.width() / 2);
+          
+          mobMenuWrapper.animate({ scrollLeft: linkPosition }, 200);
+      }
+  });
+
+  navLinks.click(function (e) {
+      e.preventDefault();
+      var target = $($(this).attr("href"));
+      $("html, body").animate({
+          scrollTop: target.offset().top - 70 
+      }, 500);
+  });
+  
   $("#toTop").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1000);
     return false;

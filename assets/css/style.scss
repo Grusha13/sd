@@ -100,7 +100,7 @@ body{
         }
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
        display: none;
     }
 }
@@ -128,7 +128,7 @@ header{
             width: 100%;
             left: 0;
             border-radius: 0;
-            z-index: 99;
+            z-index: 999;
             animation: smoothScroll 1s forwards;
             background: $light;
         }
@@ -190,7 +190,7 @@ header{
     font-family: $font;
     margin: 30px 20px 0;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 12px;
     color: $light;
     background: radial-gradient(78.49% 93.75% at 74.34% 6.25%,#646464 0,#3c3c3c 100%);
     .content-1{
@@ -228,7 +228,7 @@ header{
         }
     }
     
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
         display: block;
     }
 }
@@ -313,26 +313,25 @@ header{
     display: none;
     position: relative;
     margin: 40px 10px 0;
-    padding: 0;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-behavior: smooth;
     background-color: $grey-bg;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
     transition: .5s all ease-in;
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         width: 0;
     }
     &.fixed-menu{
-        position: fixed;
+        position: sticky;
         top: 76px;
         width: 100%;
+        height: 58px;
         left: 0;
-        border-radius: 0;
         z-index: 99;
         animation: smoothScroll 1s forwards;
         background: $light;
-        border-radius: 12px;
+        border-radius: 0 0 12px 12px;
         margin: 2px 0;
     }
     @keyframes smoothScroll {
@@ -347,16 +346,16 @@ header{
     }
 
     .mob-menu{
-        overflow: auto;
         .nav-link{
-            width: 148px;
-            margin: 0 10px;
+            width: 138px;
             font-weight: 400;
             color: #666666;
             margin: 0 10px;
             border-radius: 12px;
             text-align: center;
             font-size: 15px;
+            display: inline-block;
+            white-space: nowrap; 
             &.active, &:hover{
                 background-color: $dark-title;
                 color: $light;
@@ -613,7 +612,7 @@ header{
         }
         
         .title{
-            margin-bottom: 20px;
+            margin: 20px 0 20px;
             h6{
                 font-size: 20px;
                 font-weight: $font-bold;
@@ -774,7 +773,8 @@ header{
             opacity: 0.25;
         }
         h6{
-            font-size: 28px;
+            font-size: 22px;
+            line-height: 32px;
         }
     }
 }
@@ -807,26 +807,6 @@ footer{
             }
         }
     }
-
-    .title{
-        text-align: center;
-        margin-bottom: 30px;
-        h6{
-            font-size: 30px;
-            text-transform: uppercase;
-        }
-
-        h4{
-            font-size: 40px;
-            font-weight: $font-bold;
-        }
-
-        h2{
-            font-size: 50px;
-            font-weight: $font-bold;
-        }
-    }
-
     .footer-wrapper{
         .footer-list{
             padding: 0;
@@ -859,18 +839,11 @@ footer{
     }
 
     @media screen and (max-width: 768px) {
-        .title{
-            h2{
-                font-size: 30px;
-            }
+       .copyright{
+        .copyright-text{
+            font-size: 14px;
         }
+       }
     }
 
-    @media screen and (max-width: 420px) {
-        .title{
-            h2{
-                font-size: 28px;
-            }
-        }
-    }
 }
