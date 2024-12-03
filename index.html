@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="preload" as="image" href="assets/images/banner.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" as="style" >
@@ -47,7 +48,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#about">About Gut Health</a>
+              <a class="nav-link" href="#about">About Gut Health</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#packages">Gut Health Packages</a>
@@ -70,13 +71,30 @@
     </nav>
   </header>
   <main>
+    <section class="mob-banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+                <div class="content-1 line">
+                    <h6>Gut Health Screening</h6>
+                    <p>Visit Available at Your Doorstep</p>
+                </div>
+                <div class="content-2 d-flex">
+                  <s class="me-3">9900</s>
+                  <p class="me-3">3999</p>
+                  <p class="disc">40% off</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
     <section class="banner">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-6">
             <div class="banner-image"></div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-6">
             <div class="form-wrapper">
               <form class="form" action="#" method="post">
                 <div class="form-group my-2">
@@ -109,7 +127,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="content-wrapper d-flex align-items-center my-2">
               <div class="image-wrapper">
-                <img src="assets/images/certified.png" alt="">
+                <img src="assets/images/certified.webp" alt="" loading="lazy">
               </div>
               <div>
                 <h6>NABL</h6>
@@ -120,7 +138,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="content-wrapper d-flex align-items-center my-2">
               <div class="image-wrapper">
-                <img src="assets/images/2M.png" alt="">
+                <img src="assets/images/2M.png" alt="" loading="lazy">
               </div>
               <div>
                 <h6>2M+ Test</h6>
@@ -131,7 +149,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="content-wrapper d-flex align-items-center my-2">
               <div class="image-wrapper">
-                <img src="assets/images/home.png" alt="">
+                <img src="assets/images/home.webp" alt="" loading="lazy">
               </div>
               <div>
                 <h6>Safe Home</h6>
@@ -142,7 +160,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="content-wrapper d-flex align-items-center my-2">
               <div class="image-wrapper">
-                <img src="assets/images/blood-test.png" alt="">
+                <img src="assets/images/blood-test.webp" alt="" loading="lazy">
               </div>
               <div>
                 <h6>Tests Package</h6>
@@ -153,598 +171,645 @@
         </div>
       </div>
     </section>
-    <section class="about" id="about">
+    <section class="gut-health">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="title">
-              <h5>Gut Health: The Gateway to Overall Wellness</h5>
-            </div>
-            <div class="content" id="content">
-              <p>In recent years, the importance of gut health has garnered significant attention in the world of
-                wellness. Once thought to be just a part of the digestive system, we now know that the gut, often
-                referred to as the "second brain," plays a crucial role in our overall health. Maintaining a healthy gut
-                is not just about avoiding digestive issues—it's about ensuring that every system in your body functions
-                optimally.</p>
-              <div class="accordion" id="aboutaccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">The Importance of
-                      Gut Health</button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p>The gut is home to trillions of bacteria, collectively known as the gut microbiome, which are
-                        essential for many aspects of health. These microorganisms aid in digestion, support the immune
-                        system, and even regulate mood and behavior. In fact, more than 70% of the immune system is
-                        located in the gut. When the balance of good and bad bacteria is disrupted, it can lead to
-                        various health issues, from digestive discomfort to more serious conditions such as autoimmune
-                        diseases, inflammatory disorders, and even mental health problems.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How Gut Health
-                      Affects Other Systems of the Body</button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p><strong>Skin Health:</strong> The state of your gut has a direct impact on your skin. An
-                        imbalance in gut bacteria can trigger inflammation and contribute to skin conditions like acne,
-                        eczema, rosacea, and psoriasis. The gut's ability to regulate inflammation plays a key role in
-                        how your skin looks and feels.</p>
-                      <p><strong>Central Nervous System (CNS):</strong> Known as the "gut-brain axis," the communication
-                        between the gut and the brain is profound. The gut produces many neurotransmitters, including
-                        serotonin, which influences mood and behavior. Disruptions in gut health have been linked to
-                        mental health conditions like depression, anxiety, and even cognitive decline. Gut imbalances
-                        can also lead to brain fog, affecting concentration and memory.</p>
-                      <p><strong>Cardiovascular System:</strong> Emerging studies suggest that the gut microbiome is
-                        involved in heart health. Gut bacteria can affect blood pressure, cholesterol levels, and
-                        inflammation in the cardiovascular system. An unhealthy gut may contribute to conditions like
-                        hypertension and atherosclerosis.</p>
-                      <p><strong>Bone Health: </strong> Recent research indicates that gut health might even influence
-                        bone density and overall skeletal health. A healthy gut microbiome helps with the absorption of
-                        nutrients such as calcium and magnesium, both of which are vital for maintaining strong bones.
-                        Disruptions in gut bacteria can impair mineral absorption, potentially leading to osteoporosis
-                        or weakened bones.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Impact of Bad
-                      Gut Health</button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p>An unhealthy gut can wreak havoc on virtually every part of your body. When the balance of
-                        bacteria in your gut is disturbed (a condition known as dysbiosis), it can lead to:</p>
-                      <ul>
-                        <li><strong>Digestive Issues:</strong> Bloating, gas, diarrhea, constipation, and discomfort are
-                          common signs of gut imbalance. These issues can affect your daily life and long-term digestive
-                          function.</li>
-                        <li><strong>Weakened Immune System:</strong> An imbalanced gut can impair immune function,
-                          leading to frequent infections, allergies, or autoimmune responses.</li>
-                        <li><strong>Increased Inflammation:</strong> Poor gut health contributes to systemic
-                          inflammation, which has been linked to conditions such as arthritis, asthma, and even cancer.
-                        </li>
-                        <li><strong>Mood Disorders: </strong>With the gut and brain communicating constantly through the
-                          gut-brain axis, an unhealthy gut can contribute to anxiety, depression, and mood swings.</li>
-                        <li><strong>Chronic Fatigue:</strong> A malfunctioning gut can lead to poor nutrient absorption,
-                          leaving you feeling fatigued, sluggish, or mentally foggy.</li>
-                        <li><strong>Weight Gain:</strong> Gut bacteria play a role in metabolism, and an unhealthy
-                          microbiome can lead to imbalances that may contribute to weight gain or difficulty losing
-                          weight</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">The Memory Cells
-                      of Your Gut: The Gut as a “Second Brain”</button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p>It may surprise you to learn that your gut is not just involved in digestion, but it also has a
-                        remarkable capacity for memory. <strong>Studies have shown that the gut has memory
-                          cells,</strong> similar to those in the brain, which play a crucial role in its function.
-                        These cells are part of the enteric nervous system (ENS), a complex network of neurons that line
-                        the gastrointestinal tract.</p>
-                      <p>Remarkably, the ENS contains more neurons than the spinal cord, and it is capable of storing
-                        memories and responding to emotional and physical stimuli. This is why gut health can have a
-                        profound impact on your mood and behavior. Just like the brain stores memories, the gut too can
-                        "remember" and react to experiences, stressors, and even certain foods.</p>
-                      <p>Spiritual leader <strong>Sadhguru Jaggi Vasudev</strong> has spoken about this concept in
-                        several interviews, stating that the gut contains more memory cells than the brain. He
-                        emphasized that the gut has a form of "intelligence" that can shape our thoughts, emotions, and
-                        behavior. This connection between the gut and brain is why we often feel "gut reactions" or
-                        experience an emotional response to food or certain environments. When the gut is in distress,
-                        it may affect not only digestion but also your mental clarity and emotional balance.</p>
-                      <p>In short, the gut is not just a passive organ; it is actively involved in shaping our health
-                        and well-being. Its "memory" can affect our responses to stress, our mental state, and even our
-                        long-term health.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How to Improve
-                      Gut Health</button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p>Maintaining a healthy gut is a multi-faceted approach that involves both lifestyle changes and
-                        dietary modifications. Here are some key steps to improving gut health:</p>
-                      <ul>
-                        <li><strong>Eat a Balanced Diet: </strong> Focus on a diet rich in fiber, fruits, vegetables,
-                          whole grains, and healthy fats. Fermented foods like yogurt, kefir, sauerkraut, and kimchi
-                          introduce beneficial probiotics to your gut</li>
-                        <li><strong>Limit Processed Foods: </strong> Foods high in sugar and artificial additives can
-                          negatively affect gut bacteria. Minimize your intake of processed and sugary foods.</li>
-                        <li><strong>Stay Hydrated:</strong> Proper hydration supports digestion and the function of
-                          beneficial bacteria.</li>
-                        <li><strong>Incorporate Prebiotics and Probiotics: </strong>Prebiotics (found in foods like
-                          garlic, onions, and bananas) feed good gut bacteria, while probiotics (found in fermented
-                          foods) help replenish healthy microbes.</li>
-                        <li><strong>Manage Stress:</strong> Chronic stress can disrupt gut health by altering the
-                          balance of gut bacteria. Practices like yoga, meditation, and regular exercise can help reduce
-                          stress.</li>
-                        <li><strong>Get Enough Sleep:</strong> Poor sleep can negatively affect gut health. Aim for 7-9
-                          hours of quality sleep each night.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">How to Diagnose
-                      Your Gut Health</button>
-                  </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                    data-bs-parent="#aboutaccordion">
-                    <div class="accordion-body">
-                      <p>One of the best ways to understand the health of your gut is through testing. Many people
-                        suffer from gut-related issues without realizing the underlying cause. Testing can give you
-                        valuable insights into your gut's condition and help tailor a plan to improve your health.</p>
-                      <p>Our comprehensive <strong>Gut Health Package</strong> is designed to assess the health of your
-                        gut and give you a clearer picture of its current state. This package includes:</p>
-                    </div>
-                    <ul>
-                      <li><strong>Liver Function Test: </strong> To assess how well your liver is detoxifying and
-                        supporting digestion.</li>
-                      <li><strong>Amylase & Lipase: </strong> These enzymes play key roles in the breakdown of
-                        carbohydrates and fats. Abnormal levels may indicate pancreatic issues that affect digestion.
-                      </li>
-                      <li><strong>H. Pylori Antigen and Antibody:</strong> Testing for Helicobacter pylori, a bacteria
-                        that can cause ulcers and digestive issues.</li>
-                      <li><strong>IgE:</strong> Immunoglobulin E (IgE) testing helps to detect allergies that can impact
-                        gut health.</li>
-                      <li><strong>Tissue Transglutamase Antibody:</strong> This test helps detect celiac disease, an
-                        autoimmune disorder triggered by gluten consumption, which can severely impact gut function.
-                      </li>
-                      <li><strong>Stool Calprotectin:</strong> A biomarker for inflammation in the gut, helping to
-                        identify conditions like inflammatory bowel disease (IBD).</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="load-btn">
-              <button id="loadMore" data-target="#content">Know More <i class="fa-solid fa-plus"></i></button>
-              <button id="loadLess" data-target="#content">Show Less <i class="fa-solid fa-minus"></i></button>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-7">
+            <div class="image-wrapper">
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="care">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="title">
-              <h5>Take Charge of Your Gut Health and Your Happiness</h5>
-            </div>
-            <div class="content" id="carecontent">
-              <p>Gut health is directly proportional to your happiness. When your gut is functioning well, you feel
-                better physically and mentally. Proper digestion, a balanced microbiome, and reduced inflammation
-                contribute to better mood, energy levels, and overall well-being. By addressing gut health, you not only
-                optimize your digestion but also support your immune system, brain health, skin, bones, and
-                cardiovascular system.</p>
-              <p>We encourage you to take the first step towards better health by getting tested today. With our
-                <strong>Gut Health Package</strong>, you'll gain essential insights into your gut's condition and how it
-                can be improved for a happier, healthier life.</p>
-            </div>
-            <div class="load-btn">
-              <button id="careMore" data-target="#carecontent">Know More <i class="fa-solid fa-plus"></i></button>
-              <button id="careLess" data-target="#carecontent">Show Less <i class="fa-solid fa-minus"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="widget">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-2 col-6">
-                  <div class="content">
-                      <div class="image-wrapper">
-                          <img src="assets/images/diarrhea.webp" alt="">
-                      </div>
-                      <h6>Digestive Issues</h6>
-                  </div>
+          <div class="col-lg-5">
+            <div class="package-wrapper">
+              <div class="title">
+                <h6>Common <span>Symptoms</span> of an Unhealthy Gut</h6>
               </div>
-              <div class="col-lg-2 col-6">
-                <div class="content">
-                    <div class="image-wrapper">
-                        <img src="assets/images/immunity.webp" alt="">
-                    </div>
-                    <h6>Weakened Immune System</h6>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="content">
-                    <div class="image-wrapper">
-                        <img src="assets/images/indigestion.webp" alt="">
-                    </div>
-                    <h6>Increased Inflammation</h6>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="content">
-                    <div class="image-wrapper">
-                        <img src="assets/images/mood.webp" alt="">
-                    </div>
-                    <h6>Mood Disorders</h6>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="content">
-                    <div class="image-wrapper">
-                        <img src="assets/images/fatigue.webp" alt="">
-                    </div>
-                    <h6>Chronic Fatigue</h6>
-                </div>
-              </div>
-              <div class="col-lg-2 col-6">
-                <div class="content">
-                    <div class="image-wrapper">
-                        <img src="assets/images/obesity.webp" alt="">
-                    </div>
-                    <h6>Weight Gain</h6>
-                </div>
-              </div>
-          </div>
-      </div>
-    </section>
-    <section class="packages" id="packages">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="title">
-              <h5>The Importance of the Blood Tests in the Gut Health Package</h5>
-            </div>
-            <div class="content" id="packagecontent">
-              <p>When it comes to assessing gut health, it's not just about checking for digestive symptoms like
-                bloating, gas, or diarrhea. The state of your gut has a far-reaching impact on multiple bodily systems,
-                and the root causes of gut imbalances can sometimes be hidden deep within your biochemistry. That’s
-                where comprehensive blood tests come in.</p>
-              <p>Our <strong>Gut Health Package</strong> includes a series of critical blood tests—each one designed to
-                reveal important insights into the health of your gut and its interaction with other bodily systems.
-                Let’s break down the significance of each of these tests and how they can help in assessing your gut
-                health.</p>
-              <div class="accordion" id="gutaccordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Liver Function Test
-                      (LFT)</button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>The liver plays an essential role in digestion and detoxification. It produces bile, a
-                        substance that helps break down fats in the digestive process. The liver is also responsible for
-                        filtering toxins, metabolic waste, and by-products from the bloodstream.</p>
-                      <ul>
-                        <li><strong>Why is it important?</strong>
-                          <p>The liver and the gut are intimately connected. A dysfunctional liver can impact digestion,
-                            leading to nutrient malabsorption, bloating, and overall digestive discomfort. The liver
-                            also works closely with gut bacteria to regulate metabolic processes and inflammation. An
-                            impaired liver can contribute to a buildup of toxins in the bloodstream, which can overwhelm
-                            the gut and its microbiome.</p>
-                        </li>
-                        <li><strong>What does this test reveal?</strong>
-                          <p>Liver function tests measure enzymes like ALT (alanine transaminase) and AST (aspartate
-                            aminotransferase), as well as bilirubin levels, to give insight into how well the liver is
-                            functioning. Elevated levels can suggest liver dysfunction, which can lead to compromised
-                            digestion, nutrient absorption, and an imbalance in gut bacteria.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Amylase &
-                      Lipase</button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>Amylase and lipase are digestive enzymes produced by the pancreas. Amylase helps break down
-                        carbohydrates into simpler sugars, while lipase is responsible for digesting fats.</p>
-                      <ul>
-                        <li><strong>Why is it important?</strong>
-                          <p>Pancreatic enzymes are critical for efficient digestion. If the pancreas is inflamed or not
-                            producing enough of these enzymes, it can lead to malabsorption of nutrients, bloating, and
-                            discomfort. This can also disrupt the gut microbiome and lead to poor gut health.</p>
-                        </li>
-                        <li><strong>What does this test reveal?</strong>
-                          <p>Amylase and lipase tests help assess the function of the pancreas. High levels of these
-                            enzymes can indicate pancreatic inflammation or pancreatitis, which can directly impact
-                            digestion and gut health. Low levels may suggest insufficient enzyme production, leading to
-                            digestive inefficiency.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">H. Pylori
-                      Antigen and Antibody Test</button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>Helicobacter pylori (H. pylori) is a type of bacteria that can colonize the stomach lining and
-                        cause ulcers, gastritis, and other digestive problems. This infection is remarkably common and
-                        can lead to chronic digestive issues, affecting the gut lining and function.</p>
-                      <ul>
-                        <li><strong>Why is it important?</strong>
-                          <p>H. pylori can significantly impair gut health by causing inflammation in the stomach and
-                            intestines. It has been linked to conditions such as acid reflux, ulcers, and even stomach
-                            cancer in severe cases. Since H. pylori also impacts the gut-brain axis, it may contribute
-                            to mood disturbances, mental fog, and even anxiety.</p>
-                        </li>
-                        <li><strong>What does this test reveal?</strong>
-                          <p>The antigen and antibody test helps determine if you have an active H. pylori infection.
-                            The presence of H. pylori antibodies in the blood suggests a current or past infection,
-                            while an antigen test detects the bacteria itself in your stool or breath. Treating H.
-                            pylori can often resolve chronic digestive issues and improve gut function.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Immunoglobulin E
-                      (IgE)</button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>IgE is an antibody that plays a central role in allergic reactions. Elevated IgE levels can
-                        indicate an allergic response to foods, environmental factors, or other allergens that may
-                        disrupt the gut lining and cause systemic inflammation.</p>
-                      <ul>
-                        <li><strong>Why is it important?</strong>
-                          <p>Food allergies or sensitivities are directly linked to gut health. When the immune system
-                            overreacts to certain foods (such as gluten, dairy, or soy), it can cause inflammation in
-                            the gut, triggering symptoms like bloating, diarrhea, and fatigue. Over time, this can
-                            damage the gut lining and disrupt the delicate balance of gut bacteria.</p>
-                        </li>
-                        <li><strong>What does this test reveal?</strong>
-                          <p>Testing for IgE levels can help identify food allergies or sensitivities that might be
-                            contributing to gut imbalances. If you have elevated IgE levels, it could mean that your
-                            immune system is reacting to a food allergen, leading to inflammation in the gut and
-                            possibly triggering leaky gut syndrome or other digestive disorders.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Tissue
-                      Transglutamase Antibody (tTG-IgA)</button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>Tissue transglutamase antibodies are specific markers for <strong>celiac disease</strong>, an
-                        autoimmune disorder triggered by gluten. In people with celiac disease, consuming gluten damages
-                        the small intestine's lining, impairing nutrient absorption and causing gut inflammation.</p>
-                      <ul>
-                        <li><strong>Why is it important?</strong>
-                          <p>Celiac disease is one of the most significant autoimmune disorders affecting gut health. It
-                            is often undiagnosed for years due to its diverse and subtle symptoms. Early diagnosis can
-                            prevent long-term damage to the gut lining, improve nutrient absorption, and mitigate the
-                            risk of developing additional autoimmune diseases or gastrointestinal conditions.</p>
-                        </li>
-                        <li><strong>What does this test reveal?</strong>
-                          <p>A positive tTG-IgA test result indicates that you may have celiac disease or gluten
-                            sensitivity. If you test positive, it's important to adopt a gluten-free diet, which can
-                            help repair the damage to the small intestine, restore gut health, and improve digestion and
-                            nutrient absorption.</p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header mt-2" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Stool
-                      Calprotectin</button>
-                  </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                    data-bs-parent="#gutaccordion">
-                    <div class="accordion-body">
-                      <p>Calprotectin is a protein found in white blood cells that is released during inflammation.
-                        Elevated levels of calprotectin in the stool are indicative of inflammation in the
-                        gastrointestinal tract, commonly associated with inflammatory bowel diseases (IBD) like Crohn's
-                        disease and ulcerative colitis.</p>
-                    </div>
-                    <ul>
-                      <li><strong>Why is it important?</strong>
-                        <p>Chronic gut inflammation is a key feature of conditions such as IBD, which can severely
-                          affect digestion, nutrient absorption, and overall gut health. Calprotectin levels can help
-                          determine if inflammation is present and guide the diagnosis and management of conditions like
-                          IBD or irritable bowel syndrome (IBS).</p>
-                      </li>
-                      <li><strong>What does this test reveal?</strong>
-                        <p>A stool calprotectin test measures the amount of calprotectin in your stool, providing an
-                          indication of gut inflammation. Elevated levels can suggest IBD or other inflammatory
-                          conditions, which require a tailored treatment plan to reduce inflammation, heal the gut, and
-                          improve overall gut function.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="load-btn">
-              <button id="packageMore" data-target="#packagecontent">Know More <i class="fa-solid fa-plus"></i></button>
-              <button id="packageLess" data-target="#packagecontent">Show Less <i
-                  class="fa-solid fa-minus"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="work" id="work">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="title">
-              <h5>How Tests Work?</h5>
-            </div>
-            <div class="content" id="workcontent">
-              <p>Each of these tests provides a piece of the puzzle when it comes to understanding the overall health of
-                your gut.</p>
-              <ul>
-                <li>
-                  <p>The <strong>liver function test</strong> assesses the organ that is essential for detoxifying the
-                    blood and processing nutrients, while the <strong>amylase and lipase tests</strong> give insights
-                    into pancreatic function, a critical part of digestion.</p>
-                </li>
-                <li>
-                  <p><strong>H. pylori testing</strong> and <strong>IgE testing</strong> identify whether there is an
-                    underlying infection or allergic reaction that is causing digestive distress or disrupting the gut's
-                    microbiome.</p>
-                </li>
-                <li>
-                  <p><strong>The tissue transglutamase test</strong>helps identify celiac disease or gluten intolerance,
-                    which can have a profound effect on the gut lining and digestion.</p>
-                </li>
-                <li>
-                  <p><strong>Stool calprotectin </strong>provides a marker of intestinal inflammation, helping diagnose
-                    chronic gut conditions like Crohn's disease or ulcerative colitis.</p>
-                </li>
+              <ul class="ps-3">
+                <li><p>Complete Blood Count (CBC)</p></li>
+                 <li><p>Liver Function Test (LFT)</p></li>
+                 <li><p>Gamma Glutamyl Transferase(GGT)</p></li>
+                 <li><p>Amylase-Serum</p></li>
+                 <li><p>H Pylori Antibody</p></li>
+                 <li><p>Tissue Transglutaminase Antibody - IgG</p></li>
+                 <li><p>IgG (Total)</p></li>
               </ul>
             </div>
-            <div class="load-btn">
-              <button id="workMore" data-target="#workcontent">Know More <i class="fa-solid fa-plus"></i></button>
-              <button id="workLess" data-target="#workcontent">Show Less <i class="fa-solid fa-minus"></i></button>
-            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="why" id="why">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+    <nav class="mob-menu-wrapper" id="navbar2">
+      <ul class="navbar-nav mob-menu flex-row mx-auto mt-3 mt-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about">About Gut Health</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packages">Gut Health Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">How Tests Work?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#why">Why Tests?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar2" data-bs-offset="0" class="scrollspy2" tabindex="0">
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h5>Gut Health: The Gateway to Overall Wellness</h5>
+              </div>
+              <div class="content" id="content">
+                <p>In recent years, the importance of gut health has garnered significant attention in the world of
+                  wellness. Once thought to be just a part of the digestive system, we now know that the gut, often
+                  referred to as the "second brain," plays a crucial role in our overall health. Maintaining a healthy gut
+                  is not just about avoiding digestive issues—it's about ensuring that every system in your body functions
+                  optimally.</p>
+                <div class="accordion" id="aboutaccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">The Importance of
+                        Gut Health</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p>The gut is home to trillions of bacteria, collectively known as the gut microbiome, which are
+                          essential for many aspects of health. These microorganisms aid in digestion, support the immune
+                          system, and even regulate mood and behavior. In fact, more than 70% of the immune system is
+                          located in the gut. When the balance of good and bad bacteria is disrupted, it can lead to
+                          various health issues, from digestive discomfort to more serious conditions such as autoimmune
+                          diseases, inflammatory disorders, and even mental health problems.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How Gut Health
+                        Affects Other Systems of the Body</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p><strong>Skin Health:</strong> The state of your gut has a direct impact on your skin. An
+                          imbalance in gut bacteria can trigger inflammation and contribute to skin conditions like acne,
+                          eczema, rosacea, and psoriasis. The gut's ability to regulate inflammation plays a key role in
+                          how your skin looks and feels.</p>
+                        <p><strong>Central Nervous System (CNS):</strong> Known as the "gut-brain axis," the communication
+                          between the gut and the brain is profound. The gut produces many neurotransmitters, including
+                          serotonin, which influences mood and behavior. Disruptions in gut health have been linked to
+                          mental health conditions like depression, anxiety, and even cognitive decline. Gut imbalances
+                          can also lead to brain fog, affecting concentration and memory.</p>
+                        <p><strong>Cardiovascular System:</strong> Emerging studies suggest that the gut microbiome is
+                          involved in heart health. Gut bacteria can affect blood pressure, cholesterol levels, and
+                          inflammation in the cardiovascular system. An unhealthy gut may contribute to conditions like
+                          hypertension and atherosclerosis.</p>
+                        <p><strong>Bone Health: </strong> Recent research indicates that gut health might even influence
+                          bone density and overall skeletal health. A healthy gut microbiome helps with the absorption of
+                          nutrients such as calcium and magnesium, both of which are vital for maintaining strong bones.
+                          Disruptions in gut bacteria can impair mineral absorption, potentially leading to osteoporosis
+                          or weakened bones.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Impact of Bad
+                        Gut Health</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p>An unhealthy gut can wreak havoc on virtually every part of your body. When the balance of
+                          bacteria in your gut is disturbed (a condition known as dysbiosis), it can lead to:</p>
+                        <ul>
+                          <li><strong>Digestive Issues:</strong> Bloating, gas, diarrhea, constipation, and discomfort are
+                            common signs of gut imbalance. These issues can affect your daily life and long-term digestive
+                            function.</li>
+                          <li><strong>Weakened Immune System:</strong> An imbalanced gut can impair immune function,
+                            leading to frequent infections, allergies, or autoimmune responses.</li>
+                          <li><strong>Increased Inflammation:</strong> Poor gut health contributes to systemic
+                            inflammation, which has been linked to conditions such as arthritis, asthma, and even cancer.
+                          </li>
+                          <li><strong>Mood Disorders: </strong>With the gut and brain communicating constantly through the
+                            gut-brain axis, an unhealthy gut can contribute to anxiety, depression, and mood swings.</li>
+                          <li><strong>Chronic Fatigue:</strong> A malfunctioning gut can lead to poor nutrient absorption,
+                            leaving you feeling fatigued, sluggish, or mentally foggy.</li>
+                          <li><strong>Weight Gain:</strong> Gut bacteria play a role in metabolism, and an unhealthy
+                            microbiome can lead to imbalances that may contribute to weight gain or difficulty losing
+                            weight</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">The Memory Cells
+                        of Your Gut: The Gut as a “Second Brain”</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p>It may surprise you to learn that your gut is not just involved in digestion, but it also has a
+                          remarkable capacity for memory. <strong>Studies have shown that the gut has memory
+                            cells,</strong> similar to those in the brain, which play a crucial role in its function.
+                          These cells are part of the enteric nervous system (ENS), a complex network of neurons that line
+                          the gastrointestinal tract.</p>
+                        <p>Remarkably, the ENS contains more neurons than the spinal cord, and it is capable of storing
+                          memories and responding to emotional and physical stimuli. This is why gut health can have a
+                          profound impact on your mood and behavior. Just like the brain stores memories, the gut too can
+                          "remember" and react to experiences, stressors, and even certain foods.</p>
+                        <p>Spiritual leader <strong>Sadhguru Jaggi Vasudev</strong> has spoken about this concept in
+                          several interviews, stating that the gut contains more memory cells than the brain. He
+                          emphasized that the gut has a form of "intelligence" that can shape our thoughts, emotions, and
+                          behavior. This connection between the gut and brain is why we often feel "gut reactions" or
+                          experience an emotional response to food or certain environments. When the gut is in distress,
+                          it may affect not only digestion but also your mental clarity and emotional balance.</p>
+                        <p>In short, the gut is not just a passive organ; it is actively involved in shaping our health
+                          and well-being. Its "memory" can affect our responses to stress, our mental state, and even our
+                          long-term health.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How to Improve
+                        Gut Health</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p>Maintaining a healthy gut is a multi-faceted approach that involves both lifestyle changes and
+                          dietary modifications. Here are some key steps to improving gut health:</p>
+                        <ul>
+                          <li><strong>Eat a Balanced Diet: </strong> Focus on a diet rich in fiber, fruits, vegetables,
+                            whole grains, and healthy fats. Fermented foods like yogurt, kefir, sauerkraut, and kimchi
+                            introduce beneficial probiotics to your gut</li>
+                          <li><strong>Limit Processed Foods: </strong> Foods high in sugar and artificial additives can
+                            negatively affect gut bacteria. Minimize your intake of processed and sugary foods.</li>
+                          <li><strong>Stay Hydrated:</strong> Proper hydration supports digestion and the function of
+                            beneficial bacteria.</li>
+                          <li><strong>Incorporate Prebiotics and Probiotics: </strong>Prebiotics (found in foods like
+                            garlic, onions, and bananas) feed good gut bacteria, while probiotics (found in fermented
+                            foods) help replenish healthy microbes.</li>
+                          <li><strong>Manage Stress:</strong> Chronic stress can disrupt gut health by altering the
+                            balance of gut bacteria. Practices like yoga, meditation, and regular exercise can help reduce
+                            stress.</li>
+                          <li><strong>Get Enough Sleep:</strong> Poor sleep can negatively affect gut health. Aim for 7-9
+                            hours of quality sleep each night.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">How to Diagnose
+                        Your Gut Health</button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                      data-bs-parent="#aboutaccordion">
+                      <div class="accordion-body">
+                        <p>One of the best ways to understand the health of your gut is through testing. Many people
+                          suffer from gut-related issues without realizing the underlying cause. Testing can give you
+                          valuable insights into your gut's condition and help tailor a plan to improve your health.</p>
+                        <p>Our comprehensive <strong>Gut Health Package</strong> is designed to assess the health of your
+                          gut and give you a clearer picture of its current state. This package includes:</p>
+                      </div>
+                      <ul>
+                        <li><strong>Liver Function Test: </strong> To assess how well your liver is detoxifying and
+                          supporting digestion.</li>
+                        <li><strong>Amylase & Lipase: </strong> These enzymes play key roles in the breakdown of
+                          carbohydrates and fats. Abnormal levels may indicate pancreatic issues that affect digestion.
+                        </li>
+                        <li><strong>H. Pylori Antigen and Antibody:</strong> Testing for Helicobacter pylori, a bacteria
+                          that can cause ulcers and digestive issues.</li>
+                        <li><strong>IgE:</strong> Immunoglobulin E (IgE) testing helps to detect allergies that can impact
+                          gut health.</li>
+                        <li><strong>Tissue Transglutamase Antibody:</strong> This test helps detect celiac disease, an
+                          autoimmune disorder triggered by gluten consumption, which can severely impact gut function.
+                        </li>
+                        <li><strong>Stool Calprotectin:</strong> A biomarker for inflammation in the gut, helping to
+                          identify conditions like inflammatory bowel disease (IBD).</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="load-btn">
+                <button id="loadMore" data-target="#content">Know More <i class="fa-solid fa-plus"></i></button>
+                <button id="loadLess" data-target="#content">Show Less <i class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="care">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h5>Take Charge of Your Gut Health and Your Happiness</h5>
+              </div>
+              <div class="content" id="carecontent">
+                <p>Gut health is directly proportional to your happiness. When your gut is functioning well, you feel
+                  better physically and mentally. Proper digestion, a balanced microbiome, and reduced inflammation
+                  contribute to better mood, energy levels, and overall well-being. By addressing gut health, you not only
+                  optimize your digestion but also support your immune system, brain health, skin, bones, and
+                  cardiovascular system.</p>
+                <p>We encourage you to take the first step towards better health by getting tested today. With our
+                  <strong>Gut Health Package</strong>, you'll gain essential insights into your gut's condition and how it
+                  can be improved for a happier, healthier life.</p>
+              </div>
+              <div class="load-btn">
+                <button id="careMore" data-target="#carecontent">Know More <i class="fa-solid fa-plus"></i></button>
+                <button id="careLess" data-target="#carecontent">Show Less <i class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-6">
+                    <div class="content">
+                        <div class="image-wrapper">
+                            <img src="assets/images/diarrhea.webp" alt="" loading="lazy">
+                        </div>
+                        <h6>Digestive Issues</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="content">
+                      <div class="image-wrapper">
+                          <img src="assets/images/immunity.webp" alt="" loading="lazy">
+                      </div>
+                      <h6>Weakened Immune System</h6>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="content">
+                      <div class="image-wrapper">
+                          <img src="assets/images/indigestion.webp" alt="" loading="lazy">
+                      </div>
+                      <h6>Increased Inflammation</h6>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="content">
+                      <div class="image-wrapper">
+                          <img src="assets/images/mood.webp" alt="" loading="lazy">
+                      </div>
+                      <h6>Mood Disorders</h6>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="content">
+                      <div class="image-wrapper">
+                          <img src="assets/images/fatigue.webp" alt="" loading="lazy">
+                      </div>
+                      <h6>Chronic Fatigue</h6>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                  <div class="content">
+                      <div class="image-wrapper">
+                          <img src="assets/images/obesity.webp" alt="" loading="lazy">
+                      </div>
+                      <h6>Weight Gain</h6>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="packages" id="packages">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h5>The Importance of the Blood Tests in the Gut Health Package</h5>
+              </div>
+              <div class="content" id="packagecontent">
+                <p>When it comes to assessing gut health, it's not just about checking for digestive symptoms like
+                  bloating, gas, or diarrhea. The state of your gut has a far-reaching impact on multiple bodily systems,
+                  and the root causes of gut imbalances can sometimes be hidden deep within your biochemistry. That’s
+                  where comprehensive blood tests come in.</p>
+                <p>Our <strong>Gut Health Package</strong> includes a series of critical blood tests—each one designed to
+                  reveal important insights into the health of your gut and its interaction with other bodily systems.
+                  Let’s break down the significance of each of these tests and how they can help in assessing your gut
+                  health.</p>
+                <div class="accordion" id="gutaccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Liver Function Test
+                        (LFT)</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>The liver plays an essential role in digestion and detoxification. It produces bile, a
+                          substance that helps break down fats in the digestive process. The liver is also responsible for
+                          filtering toxins, metabolic waste, and by-products from the bloodstream.</p>
+                        <ul>
+                          <li><strong>Why is it important?</strong>
+                            <p>The liver and the gut are intimately connected. A dysfunctional liver can impact digestion,
+                              leading to nutrient malabsorption, bloating, and overall digestive discomfort. The liver
+                              also works closely with gut bacteria to regulate metabolic processes and inflammation. An
+                              impaired liver can contribute to a buildup of toxins in the bloodstream, which can overwhelm
+                              the gut and its microbiome.</p>
+                          </li>
+                          <li><strong>What does this test reveal?</strong>
+                            <p>Liver function tests measure enzymes like ALT (alanine transaminase) and AST (aspartate
+                              aminotransferase), as well as bilirubin levels, to give insight into how well the liver is
+                              functioning. Elevated levels can suggest liver dysfunction, which can lead to compromised
+                              digestion, nutrient absorption, and an imbalance in gut bacteria.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Amylase &
+                        Lipase</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>Amylase and lipase are digestive enzymes produced by the pancreas. Amylase helps break down
+                          carbohydrates into simpler sugars, while lipase is responsible for digesting fats.</p>
+                        <ul>
+                          <li><strong>Why is it important?</strong>
+                            <p>Pancreatic enzymes are critical for efficient digestion. If the pancreas is inflamed or not
+                              producing enough of these enzymes, it can lead to malabsorption of nutrients, bloating, and
+                              discomfort. This can also disrupt the gut microbiome and lead to poor gut health.</p>
+                          </li>
+                          <li><strong>What does this test reveal?</strong>
+                            <p>Amylase and lipase tests help assess the function of the pancreas. High levels of these
+                              enzymes can indicate pancreatic inflammation or pancreatitis, which can directly impact
+                              digestion and gut health. Low levels may suggest insufficient enzyme production, leading to
+                              digestive inefficiency.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">H. Pylori
+                        Antigen and Antibody Test</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>Helicobacter pylori (H. pylori) is a type of bacteria that can colonize the stomach lining and
+                          cause ulcers, gastritis, and other digestive problems. This infection is remarkably common and
+                          can lead to chronic digestive issues, affecting the gut lining and function.</p>
+                        <ul>
+                          <li><strong>Why is it important?</strong>
+                            <p>H. pylori can significantly impair gut health by causing inflammation in the stomach and
+                              intestines. It has been linked to conditions such as acid reflux, ulcers, and even stomach
+                              cancer in severe cases. Since H. pylori also impacts the gut-brain axis, it may contribute
+                              to mood disturbances, mental fog, and even anxiety.</p>
+                          </li>
+                          <li><strong>What does this test reveal?</strong>
+                            <p>The antigen and antibody test helps determine if you have an active H. pylori infection.
+                              The presence of H. pylori antibodies in the blood suggests a current or past infection,
+                              while an antigen test detects the bacteria itself in your stool or breath. Treating H.
+                              pylori can often resolve chronic digestive issues and improve gut function.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Immunoglobulin E
+                        (IgE)</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>IgE is an antibody that plays a central role in allergic reactions. Elevated IgE levels can
+                          indicate an allergic response to foods, environmental factors, or other allergens that may
+                          disrupt the gut lining and cause systemic inflammation.</p>
+                        <ul>
+                          <li><strong>Why is it important?</strong>
+                            <p>Food allergies or sensitivities are directly linked to gut health. When the immune system
+                              overreacts to certain foods (such as gluten, dairy, or soy), it can cause inflammation in
+                              the gut, triggering symptoms like bloating, diarrhea, and fatigue. Over time, this can
+                              damage the gut lining and disrupt the delicate balance of gut bacteria.</p>
+                          </li>
+                          <li><strong>What does this test reveal?</strong>
+                            <p>Testing for IgE levels can help identify food allergies or sensitivities that might be
+                              contributing to gut imbalances. If you have elevated IgE levels, it could mean that your
+                              immune system is reacting to a food allergen, leading to inflammation in the gut and
+                              possibly triggering leaky gut syndrome or other digestive disorders.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Tissue
+                        Transglutamase Antibody (tTG-IgA)</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>Tissue transglutamase antibodies are specific markers for <strong>celiac disease</strong>, an
+                          autoimmune disorder triggered by gluten. In people with celiac disease, consuming gluten damages
+                          the small intestine's lining, impairing nutrient absorption and causing gut inflammation.</p>
+                        <ul>
+                          <li><strong>Why is it important?</strong>
+                            <p>Celiac disease is one of the most significant autoimmune disorders affecting gut health. It
+                              is often undiagnosed for years due to its diverse and subtle symptoms. Early diagnosis can
+                              prevent long-term damage to the gut lining, improve nutrient absorption, and mitigate the
+                              risk of developing additional autoimmune diseases or gastrointestinal conditions.</p>
+                          </li>
+                          <li><strong>What does this test reveal?</strong>
+                            <p>A positive tTG-IgA test result indicates that you may have celiac disease or gluten
+                              sensitivity. If you test positive, it's important to adopt a gluten-free diet, which can
+                              help repair the damage to the small intestine, restore gut health, and improve digestion and
+                              nutrient absorption.</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header mt-2" id="headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Stool
+                        Calprotectin</button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                      data-bs-parent="#gutaccordion">
+                      <div class="accordion-body">
+                        <p>Calprotectin is a protein found in white blood cells that is released during inflammation.
+                          Elevated levels of calprotectin in the stool are indicative of inflammation in the
+                          gastrointestinal tract, commonly associated with inflammatory bowel diseases (IBD) like Crohn's
+                          disease and ulcerative colitis.</p>
+                      </div>
+                      <ul>
+                        <li><strong>Why is it important?</strong>
+                          <p>Chronic gut inflammation is a key feature of conditions such as IBD, which can severely
+                            affect digestion, nutrient absorption, and overall gut health. Calprotectin levels can help
+                            determine if inflammation is present and guide the diagnosis and management of conditions like
+                            IBD or irritable bowel syndrome (IBS).</p>
+                        </li>
+                        <li><strong>What does this test reveal?</strong>
+                          <p>A stool calprotectin test measures the amount of calprotectin in your stool, providing an
+                            indication of gut inflammation. Elevated levels can suggest IBD or other inflammatory
+                            conditions, which require a tailored treatment plan to reduce inflammation, heal the gut, and
+                            improve overall gut function.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="load-btn">
+                <button id="packageMore" data-target="#packagecontent">Know More <i class="fa-solid fa-plus"></i></button>
+                <button id="packageLess" data-target="#packagecontent">Show Less <i
+                    class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work" id="work">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h5>How Tests Work?</h5>
+              </div>
+              <div class="content" id="workcontent">
+                <p>Each of these tests provides a piece of the puzzle when it comes to understanding the overall health of
+                  your gut.</p>
+                <ul>
+                  <li>
+                    <p>The <strong>liver function test</strong> assesses the organ that is essential for detoxifying the
+                      blood and processing nutrients, while the <strong>amylase and lipase tests</strong> give insights
+                      into pancreatic function, a critical part of digestion.</p>
+                  </li>
+                  <li>
+                    <p><strong>H. pylori testing</strong> and <strong>IgE testing</strong> identify whether there is an
+                      underlying infection or allergic reaction that is causing digestive distress or disrupting the gut's
+                      microbiome.</p>
+                  </li>
+                  <li>
+                    <p><strong>The tissue transglutamase test</strong>helps identify celiac disease or gluten intolerance,
+                      which can have a profound effect on the gut lining and digestion.</p>
+                  </li>
+                  <li>
+                    <p><strong>Stool calprotectin </strong>provides a marker of intestinal inflammation, helping diagnose
+                      chronic gut conditions like Crohn's disease or ulcerative colitis.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="load-btn">
+                <button id="workMore" data-target="#workcontent">Know More <i class="fa-solid fa-plus"></i></button>
+                <button id="workLess" data-target="#workcontent">Show Less <i class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="why" id="why">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="title">
+                <h5>Why These Blood Tests Are Crucial for Your Health</h5>
+              </div>
+              <div class="content" id="whycontent">
+                <p>Understanding the health of your gut is key to addressing not just digestive discomfort, but also improving overall well-being. Many systemic conditions—such as autoimmune diseases, mood disorders, and skin issues—can be traced back to an unhealthy gut. Testing these biomarkers allows you to identify potential issues early, guiding appropriate interventions to restore gut health before it leads to more serious complications.</p>
+                <p>By utilizing these tests, you can gain comprehensive insights into your gut health and ensure that every aspect of your digestive system is functioning optimally. Whether you're struggling with chronic digestive symptoms, unexplained fatigue, skin conditions, or mood swings, these tests can help identify the root causes and guide a treatment plan for better health.</p>
+              </div>
+              <div class="load-btn">
+                <button id="whyMore" data-target="#whycontent">Know More <i class="fa-solid fa-plus"></i></button>
+                <button id="whyLess" data-target="#whycontent">Show Less <i class="fa-solid fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="widget-second">
+        <div class="container">
+          <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-4">
+              <div class="form-wrapper">
+                <form class="form" action="#" method="post">
+                  <div class="form-group my-2">
+                    <input type="text" name="username" id="name" class="name" placeholder="John Pritchet" required>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="emailAdress" id="email" class="email" placeholder="john@gmail.com" required>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group my-2">
+                    <input type="text" name="phone" id="phone" class="phone" placeholder="+91 1234567890" required>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group my-2">
+                    <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                  </div>
+                  <div class="CTA">
+                    <input type="submit" value="Signup Now" id="submit">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h6>Your gut health is your gateway to vitality—take care of it, and it will take care of you</h6>         
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="row">
             <div class="title">
-              <h5>Why These Blood Tests Are Crucial for Your Health</h5>
+              <h5>Frequently Asked Questions</h5>
             </div>
-            <div class="content" id="whycontent">
-              <p>Understanding the health of your gut is key to addressing not just digestive discomfort, but also improving overall well-being. Many systemic conditions—such as autoimmune diseases, mood disorders, and skin issues—can be traced back to an unhealthy gut. Testing these biomarkers allows you to identify potential issues early, guiding appropriate interventions to restore gut health before it leads to more serious complications.</p>
-              <p>By utilizing these tests, you can gain comprehensive insights into your gut health and ensure that every aspect of your digestive system is functioning optimally. Whether you're struggling with chronic digestive symptoms, unexplained fatigue, skin conditions, or mood swings, these tests can help identify the root causes and guide a treatment plan for better health.</p>
-            </div>
-            <div class="load-btn">
-              <button id="whyMore" data-target="#whycontent">Know More <i class="fa-solid fa-plus"></i></button>
-              <button id="whyLess" data-target="#whycontent">Show Less <i class="fa-solid fa-minus"></i></button>
-            </div>
+            <ul>
+              <li><h6>1. Why should you choose Simira Diagnostics?</h6>
+              <p>Simira Diagnostics is one stop solutions for all pathology and radiology services with highly modern equipment. All the equipment's are interfaced with LTS eliminating the chance of manual errors. We stress in the quality of our reports and follow all protocol as per NABL accreditation providing the customer with the most accurate and precise reports. With the most experience Pathologist and Radiologist doctors in our panel. We have most efficient and well trained lab technicians. Company is permeated with the most talented, experienced and passionate personal in the back office as well as field and also skilled phlebotomist working 24*7 for collecting samples from hospitals and home.</p></li>
+              <li><h6>2. How Gut Health Affects Other Systems of the Body</h6>
+              <p>An imbalance in gut bacteria can trigger inflammation and contribute to skin conditions like acne, eczema, rosacea, and psoriasis. Gut imbalances can also lead to brain fog, affecting concentration and memory. An unhealthy gut may contribute to conditions like hypertension and atherosclerosis. Disruptions in gut bacteria can impair mineral absorption, potentially leading to osteoporosis or weakened bones.</p></li>
+              <li><h6>3. How to Improve Gut Health?</h6><p>Maintaining a healthy gut is a multi-faceted approach that involves both lifestyle changes and dietary modifications. Here are some key steps to improving gut health: Eat a Balanced Diet, Limit Processed Foods, Stay Hydrated, Incorporate Prebiotics and Probiotics, Manage Stress, Get Enough Sleep</p></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="widget-second">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-4">
-            <div class="form-wrapper">
-              <form class="form" action="#" method="post">
-                <div class="form-group my-2">
-                  <input type="text" name="username" id="name" class="name" placeholder="John Pritchet" required>
-                  <span class="error"></span>
-                </div>
-                <div class="form-group">
-                  <input type="email" name="emailAdress" id="email" class="email" placeholder="john@gmail.com" required>
-                  <span class="error"></span>
-                </div>
-                <div class="form-group my-2">
-                  <input type="text" name="phone" id="phone" class="phone" placeholder="+91 1234567890" required>
-                  <span class="error"></span>
-                </div>
-                <div class="form-group my-2">
-                  <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
-                </div>
-                <div class="CTA">
-                  <input type="submit" value="Signup Now" id="submit">
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h6>Your gut health is your gateway to vitality—take care of it, and it will take care of you</h6>         
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="faq" id="faq">
-      <div class="container">
-        <div class="row">
-          <div class="title">
-            <h5>Frequently Asked Questions</h5>
-          </div>
-          <ul>
-            <li><h6>1. Why should you choose Simira Diagnostics?</h6>
-            <p>Simira Diagnostics is one stop solutions for all pathology and radiology services with highly modern equipment. All the equipment's are interfaced with LTS eliminating the chance of manual errors. We stress in the quality of our reports and follow all protocol as per NABL accreditation providing the customer with the most accurate and precise reports. With the most experience Pathologist and Radiologist doctors in our panel. We have most efficient and well trained lab technicians. Company is permeated with the most talented, experienced and passionate personal in the back office as well as field and also skilled phlebotomist working 24*7 for collecting samples from hospitals and home.</p></li>
-            <li><h6>2. How Gut Health Affects Other Systems of the Body</h6>
-            <p>An imbalance in gut bacteria can trigger inflammation and contribute to skin conditions like acne, eczema, rosacea, and psoriasis. Gut imbalances can also lead to brain fog, affecting concentration and memory. An unhealthy gut may contribute to conditions like hypertension and atherosclerosis. Disruptions in gut bacteria can impair mineral absorption, potentially leading to osteoporosis or weakened bones.</p></li>
-            <li><h6>3. How to Improve Gut Health?</h6><p>Maintaining a healthy gut is a multi-faceted approach that involves both lifestyle changes and dietary modifications. Here are some key steps to improving gut health: Eat a Balanced Diet, Limit Processed Foods, Stay Hydrated, Incorporate Prebiotics and Probiotics, Manage Stress, Get Enough Sleep</p></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-6">
                 <div class="image-wrapper">
-                    <img src="assets/images/logo.png" alt="" class="img-fluid"  loading="lazy">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid">
                 </div>
                 <div class="social-media">
                     <ul class="social-list d-flex">
@@ -837,7 +902,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/custom.js" defer></script>
 
 </body>
 

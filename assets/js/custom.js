@@ -2,9 +2,9 @@ $(document).ready(function () {
   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: "#scrollspy",
   });
-  var scrollTrigger = 500;
 
   $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop();
     if ($(this).scrollTop() > scrollTrigger) {
       $("#toTop").fadeIn();
     } else {
@@ -15,6 +15,21 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("fixed");
     }
+
+    var mobMenu = $("#navbar2");
+    var mobMenuOffset = mobMenu.offset().top;
+    var windowHeight = $(window).height();
+
+    // Add the fixed class when the scroll reaches the element
+    if (scrollPos + windowHeight >= mobMenuOffset) {
+        $(".mob-menu-wrapper").addClass("fixed-menu");
+    } else {
+        $(".mob-menu-wrapper").removeClass("fixed-menu");
+    }
+
+    if (scrollPos === 0) {
+      $(".mob-menu-wrapper").removeClass("fixed-menu");
+  }
   });
 
   var scrollTrigger = 500;
@@ -138,7 +153,6 @@ $(document).ready(function () {
       $(this)
         .siblings("#loadMore,#workMore, #packageMore, #whyMore, #careMore")
         .show();
-
       $(this).closest(".load-btn").removeClass("active");
     }
   );

@@ -101,21 +101,7 @@ body{
     }
 
     @media screen and (max-width: 767px) {
-        top: 80px;
-        bottom: auto;
-        border-radius: 0 0 12px 12px;
-        left: 0;
-        align-items: center;
-
-        .support{
-           a{
-                font-size: 0;
-                padding: 28px 5px 14px 13px;
-                i{
-                    font-size: 22px;
-                }
-           }
-        }
+       display: none;
     }
 }
 
@@ -178,22 +164,16 @@ header{
 
     @media screen and (max-width: 768px) {
         .navbar-collapse{
-            position: absolute;
-            top: 80px;
-            background-color: $light;
-            left: 0;
-            width: 100%;
-            padding: 20px 10px;
-            z-index: 99;
+            display: none;
+        }
 
-            .nav-item{
-                margin: 5px 0;
-            }
+        .navbar-toggler {
+            display: none;
         }
 
         .support{
             position: absolute;
-            right: 20%;
+            right: 5%;
         }
     }
 
@@ -201,6 +181,55 @@ header{
         .support{
             display: none;
         }
+    }
+}
+
+.mob-banner{
+    display: none;
+    background-color: $primary-color;
+    font-family: $font;
+    margin: 30px 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    color: $light;
+    background: radial-gradient(78.49% 93.75% at 74.34% 6.25%,#646464 0,#3c3c3c 100%);
+    .content-1{
+        h6{
+            font-size: 20px;
+            font-weight: $font-bold;
+        }
+        &.line{
+            border-bottom: 1px dashed $grey;
+        }
+        p{
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .content-2{
+        margin-top: 10px;
+        align-items: center;
+        s{
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 18px;
+            color: $light;
+            font-weight: $font-bold;
+        }
+        .disc{
+            font-size: 13px;
+            background: $dark-title;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-weight: $font-bold;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        display: block;
     }
 }
 
@@ -227,22 +256,18 @@ header{
         margin: 20px 0 20px;
         .container{
             height: 100%;
-
+            background-color: $grey-bg;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,.102);;
             .banner-image{
                 background-position: center;
                 background-size: cover;
-                height: 340px;
+                height: 300px;
             }
         }
     }
     
     @media screen and (max-width: 767px) {
-        margin: 80px 0 20px;
-        .container{
-            .banner-image{
-                display: none;
-            }
-        }
+        margin: 20px 0 20px;
     }
 }
 
@@ -281,6 +306,67 @@ header{
                 color: $primary-color;
             }
         }
+    }
+}
+
+.mob-menu-wrapper{
+    display: none;
+    position: relative;
+    margin: 40px 10px 0;
+    padding: 0;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    background-color: $grey-bg;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
+    transition: .5s all ease-in;
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    &.fixed-menu{
+        position: fixed;
+        top: 76px;
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+        z-index: 99;
+        animation: smoothScroll 1s forwards;
+        background: $light;
+        border-radius: 12px;
+        margin: 2px 0;
+    }
+    @keyframes smoothScroll {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .mob-menu{
+        overflow: auto;
+        .nav-link{
+            width: 148px;
+            margin: 0 10px;
+            font-weight: 400;
+            color: #666666;
+            margin: 0 10px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 15px;
+            &.active, &:hover{
+                background-color: $dark-title;
+                color: $light;
+                border-radius: 12px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: block;
     }
 }
 
@@ -352,7 +438,7 @@ header{
 
     .title{
         h5{
-            font-size: 32px;
+            font-size: 20px;
             font-weight: $font-black;
         }
     }
@@ -387,6 +473,27 @@ header{
             }
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .title{
+            padding: 0 10px;
+            h5{
+                font-size: 18px;
+            }
+        }
+        .content{
+            padding: 0 10px;
+            .accordion{
+                .accordion-item{
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
 }
 .about{
     position: relative;
@@ -407,6 +514,12 @@ header{
         rotate: -45deg;
         top: 0;
     }
+
+    @media screen and (max-width:767px){
+        &::before{
+            opacity: 0.08;
+        }
+    }
 }
 .work{
     position: relative;
@@ -425,6 +538,12 @@ header{
         filter: brightness(0.5);
         z-index: -1;
         rotate: 45deg;
+    }
+
+    @media screen and (max-width:767px){
+        &::before{
+            opacity: 0.08;
+        }
     }
 }
 .widget{
@@ -472,6 +591,53 @@ header{
     @media screen and (max-width: 768px) {
         .content{
             margin: 10px 0;
+        }
+    }
+}
+
+.gut-health{
+    margin: 40px 0;
+    font-family: $font;
+    .container{
+        padding: 60px 20px;
+        border-radius: 20px;
+        background: #e4f5ff;        
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.102);
+
+        .image-wrapper{
+            background: url(../images/gut-health.webp);
+            background-position: center;
+            background-size: contain;
+            height: 250px;
+            background-repeat: no-repeat;
+        }
+        
+        .title{
+            margin-bottom: 20px;
+            h6{
+                font-size: 20px;
+                font-weight: $font-bold;
+                span{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .container{
+            padding: 30px 20px;
+            .image-wrapper{
+                height: 150px;
+            }
+            ul{
+                li{
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        color: $text-color;
+                    }
+                }
+            }
         }
     }
 }
@@ -526,8 +692,8 @@ header{
                 font-size: 20px;
             }
             p{
-                font-size: 16px;
-
+                font-size: 17px;
+                color: $p-color;
             }
         }
     }
@@ -542,6 +708,24 @@ header{
             opacity: 0.3;
             z-index: 0;
             left: -10%;
+        }
+        .title{
+            padding-left: 20px;
+            padding-right: 20px;
+            h5{
+                font-size: 20px;
+            }
+        }
+        ul{
+            padding: 0 20px;
+            li{
+                h6{
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
@@ -583,6 +767,15 @@ header{
         font-weight: $font-black;
         color: $light;
         text-transform: capitalize;
+    }
+
+    @media screen and (max-width: 768px) {
+        &::before{
+            opacity: 0.25;
+        }
+        h6{
+            font-size: 28px;
+        }
     }
 }
 
