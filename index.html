@@ -812,15 +812,15 @@
               <div class="form-wrapper">
                 <form class="form" action="#" method="post">
                   <div class="form-group my-2">
-                    <input type="text" name="username" id="name" class="name" placeholder="John Pritchet" required>
+                    <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
                     <span class="error"></span>
                   </div>
                   <div class="form-group">
-                    <input type="email" name="emailAdress" id="email" class="email" placeholder="john@gmail.com" required>
+                    <input type="email" name="emailAdress" id="email" class="email" placeholder="Email ID" required>
                     <span class="error"></span>
                   </div>
                   <div class="form-group my-2">
-                    <input type="text" name="phone" id="phone" class="phone" placeholder="+91 1234567890" required>
+                    <input type="text" name="phone" id="phone" class="phone" placeholder="Mobile Number" required>
                     <span class="error"></span>
                   </div>
                   <div class="form-group my-2">
@@ -938,19 +938,42 @@
                   <div class="form-wrapper mb-3">
                     <form class="form" action="#" method="post">
                       <div class="form-group my-2">
-                        <input type="text" name="username" id="name" class="name" placeholder="John Pritchet" required>
+                        <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
                         <span class="error"></span>
                       </div>
                       <div class="form-group">
-                        <input type="email" name="emailAdress" id="email" class="email" placeholder="john@gmail.com" required>
+                        <input type="email" name="emailAdress" id="email" class="email" placeholder="Email ID" required>
                         <span class="error"></span>
                       </div>
                       <div class="form-group my-2">
-                        <input type="text" name="phone" id="phone" class="phone" placeholder="+91 1234567890" required>
+                        <input type="text" name="phone" id="phone" class="phone" placeholder="Mobile Number" required>
                         <span class="error"></span>
                       </div>
                       <div class="form-group my-2">
-                        <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                        <select name="location" id="location" class="location" required>
+                          <option value="Select Location" default>Select Location</option>
+                          <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                          <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                          <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                          <option  value="Amylase-Serum">Amylase-Serum</option>
+                          <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                          <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                          <option value="IgG (Total)">IgG (Total)</option>
+                        </select>
+                        <span class="error"></span>
+                      </div>
+                      <div class="form-group my-2">
+                        <select name="tests" id="tests" class="tests" required>
+                          <option value="Select Test" default>Select Tests</option>
+                          <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                          <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                          <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                          <option  value="Amylase-Serum">Amylase-Serum</option>
+                          <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                          <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                          <option value="IgG (Total)">IgG (Total)</option>
+                        </select>
+                        <span class="error"></span>
                       </div>
                       <div class="CTA">
                         <input type="submit" value="Signup Now" id="submit">
