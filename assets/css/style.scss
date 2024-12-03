@@ -61,49 +61,52 @@ body{
      }
 }
 
-.package-fix{
-    position: fixed;
-    display: flex;
-    bottom: 0;
-    left: 10px;
-    background-color: $primary-color;
-    color: $light;
-    border-radius: 8px 8px 0 0;
-    padding: 15px;
-    z-index: 9;
-    h6{
-        margin-bottom: 0;
-        margin-right: 20px;
-        font-weight: $font-bold;
-        font-size: 18px;
-    }
-    s{
-        margin-right: 10px;
-        color: #d8d8d8;
-    }
-    .support{
-        a{
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 8px;
-            color: $secondary-color;
-            font-weight: $font-bold;
-            background-color: $light;
-            i{
-                margin-right: 10px;
-            }
-            &:hover{
-                background-color: $secondary-color;
-                color: $light;
-                border: 1px solid $primary-color;
-            }
-        }
-    }
+// .package-fix{
+//     position: fixed;
+//     display: flex;
+//     top: 80px;
+//     left: 0;
+//     background: radial-gradient(78.49% 93.75% at 74.34% 6.25%,#646464 0,#3c3c3c 100%);
+//     color: $light;
+//     border-radius: 0 0 8px 8px;
+//     width: 100%;
+//     padding: 15px;
+//     z-index: 9;
+//     justify-content: center;
+//     h6{
+//         margin-bottom: 0;
+//         margin-right: 20px;
+//         font-weight: $font-bold;
+//         font-size: 18px;
+//     }
+//     s{
+//         margin-right: 10px;
+//         color: #d8d8d8;
+//     }
+//     .support{
+//         margin-left: 100px;
+//         a{
+//             text-decoration: none;
+//             padding: 10px 15px;
+//             border-radius: 8px;
+//             color: $secondary-color;
+//             font-weight: $font-bold;
+//             background-color: $light;
+//             i{
+//                 margin-right: 10px;
+//             }
+//             &:hover{
+//                 background-color: $secondary-color;
+//                 color: $light;
+//                 border: 1px solid $primary-color;
+//             }
+//         }
+//     }
 
-    @media screen and (max-width: 768px) {
-       display: none;
-    }
-}
+//     @media screen and (max-width: 768px) {
+//        display: none;
+//     }
+// }
 
 header{
     .navbar{
@@ -228,46 +231,193 @@ header{
         }
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         display: block;
     }
 }
 
 .banner{
     margin: 20px 0;
+    position: relative;
+
     .container{
-        background: $primary-color;
+        background: $grey-bg;
+        padding: 60px 20px 20px;
         border-radius: 24px;
-        height: 420px;
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.102);
+        position: relative;
         overflow: hidden;
-        .banner-image{
-            background: url('../images/banner.webp');
-            background-position: left;
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 420px;
-        }
-        .form{
-            @include form;
-        }
     }
+        .banner-image-wrapper{
+            height: 450px;
+            width: 450px;
+            border-radius: 24px;
+            border-left: solid;
+            border-bottom: solid;
+            border-width: 10px;
+            border-color: $primary-color;
+            position: absolute;
+            right: 25%;
+            top: 4%;
+            overflow: hidden;
+            .banner-image{
+                background: url('../images/banner.webp');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 450px;
+                width: 450px;
+                z-index: 0;
+            }
+        }
+        .content-1{
+            h6{
+                font-size: 40px;
+                color: $primary-color;
+                font-weight: $font-black;
+            }
+        }
+        .content-2{
+            margin-top: 10px;
+            align-items: center;
+            s{
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.6);
+                font-weight: $font-bold;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 24px;
+                color: $dark;
+                font-weight: $font-black;
+            }
+            .disc{
+                font-size: 18px;
+                background: $pink;
+                color: $light;
+                padding: 5px 12px;
+                border-radius: 4px;
+                font-weight: $font-bold;
+            }
+        }
+
+        .home-visit{
+            border-radius: 20px;
+            max-width: 400px;
+            margin-top: 40px;
+
+            h6{
+                font-size: 28px;
+                font-weight: $font-bold;
+                color: $primary-color;
+            }
+            span{
+                font-size: 20px;
+                font-weight: $font-regular;
+                color: $dark;
+            }
+
+            .time-content{
+                .time-content-txt{
+                    display: flex;
+                    position: relative;
+                    margin-top: 10px;
+                    .time-content-head{
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    .line{
+                        width: 7.125rem;
+                        height: 0.0625rem;
+                        background: -o-linear-gradient(left, rgba(0, 101, 72, 0.5) 0%, rgba(0, 101, 72, 0.5) 35%, rgba(0, 101, 72, 0) 100%);
+                        background: -webkit-gradient(linear, left top, right top, from(rgba(0, 101, 72, 0.5)), color-stop(35%, rgba(0, 101, 72, 0.5)), to(rgba(0, 101, 72, 0)));
+                        background: linear-gradient(90deg, rgba(0, 101, 72, 0.5) 0%, rgba(0, 101, 72, 0.5) 35%, rgba(0, 101, 72, 0) 100%);
+                        margin-top: 15px;
+                        margin-left: 5px;
+                    }
+                }
+                .time{
+                    font-size: 25px;
+                    color: $pink;
+                    text-transform: capitalize;
+                    span{
+                        font-size: 35px;
+                        color: $pink;
+                        font-weight: $font-bold;
+                    }
+                }
+            }
+        }
+        
+        .form-wrapper{
+            position: relative;
+            .form{
+                @include form;
+            }
+        }
 
     @media screen and (max-width: 768px) {
         margin: 20px 0 20px;
         .container{
             height: 100%;
             background-color: $grey-bg;
-            box-shadow: 0 4px 24px 0 rgba(0,0,0,.102);;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,.102);
+            .banner-image-wrapper{
+                height: 350px;
+                width: 350px;
+                top: 10%;
+                right:0;
+            }
             .banner-image{
                 background-position: center;
                 background-size: cover;
-                height: 300px;
+                height: 350px;
+                width: 350px;
+            }
+            .home-visit{
+                h6{
+                    font-size: 22px;
+                }
+            }
+            .content-1 h6 {
+                font-size: 32px;
             }
         }
     }
     
     @media screen and (max-width: 767px) {
         margin: 20px 0 20px;
+        .container{
+            padding-top: 20px;
+            .content-1{
+                display: none;
+            }
+            .content-2{
+                display: none;
+            }
+            .banner-image-wrapper{
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+            .time-content{
+                position: relative;
+                margin-bottom: 20px;
+
+                .time-content-img{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+            .home-visit{
+                margin-top: 0;
+            }
+        }
     }
 }
 
@@ -505,13 +655,13 @@ header{
         position: absolute;
         background-repeat: no-repeat;
         right: 0;
-        height: 600px;
+        height: 300px;
         width: 300px;
-        opacity: 0.15;
+        opacity: 0.05;
         filter: brightness(0.5);
         z-index: -1;
         rotate: -45deg;
-        top: 0;
+        top: 0px;
     }
 
     @media screen and (max-width:767px){
@@ -533,10 +683,11 @@ header{
         left: 0;
         height: 600px;
         width: 300px;
-        opacity: 0.15;
+        opacity: 0.05;
         filter: brightness(0.5);
         z-index: -1;
         rotate: 45deg;
+        top: -40px;
     }
 
     @media screen and (max-width:767px){
@@ -614,7 +765,7 @@ header{
         .title{
             margin: 20px 0 20px;
             h6{
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: $font-bold;
                 span{
                     color: $secondary-color;
@@ -740,32 +891,31 @@ header{
         border-radius: 12px;
         background-color: #006546;
         border-bottom: 6px solid #49957e;
+        overflow: hidden;
 
         .form{
             @include form;
         }
+        &::before{
+            content: '';
+            background: url(../images/leaf-bg.webp);
+            background-position: 50%;
+            background-size: 100%;
+            position: absolute;
+            background-repeat: no-repeat;
+            right: 12%;
+            height: 500px;
+            width: 300px;
+            filter: opacity(0.2);
+            rotate: -45deg;
+        }
+    
     }
-
-    &::before{
-        content: '';
-        background: url(../images/leaf-bg.webp);
-        background-position: 50%;
-        background-size: 100%;
-        position: absolute;
-        background-repeat: no-repeat;
-        right: 5%;
-        height: 500px;
-        width: 300px;
-        filter: opacity(0.2);
-        rotate: -45deg;
-    }
-
     h6{
-        font-size: 40px;
+        font-size: 30px;
         position: relative;
-        font-weight: $font-black;
+        font-weight: $font-bold;
         color: $light;
-        text-transform: capitalize;
     }
 
     @media screen and (max-width: 768px) {

@@ -18,14 +18,14 @@
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="50" tabindex="0">
-  <div class="package-fix">
+  <!-- <div class="package-fix">
       <h6>GUT HEALTH SCREENING</h6>
       <s class="">9900/-</s>
       <h6>3999/-</h6>
       <div class="support">
         <a href="tel:+917790098009"><i class="fa-phone fa-solid"></i>Book Now</a>
       </div>
-  </div>
+  </div> -->
   <div class="scroll-top" id='toTop'>
     <a href="">
         <i class="fa fa-arrow-up" aria-hidden="true"></i>
@@ -80,8 +80,8 @@
                     <p>Visit Available at Your Doorstep</p>
                 </div>
                 <div class="content-2 d-flex">
-                  <s class="me-3">9900</s>
-                  <p class="me-3">3999</p>
+                  <s class="me-3">9900/-</s>
+                  <p class="me-3">3999/-</p>
                   <p class="disc">40% off</p>
                 </div>
             </div>
@@ -90,27 +90,79 @@
     </section>
     <section class="banner">
       <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-7 col-6">
-            <div class="banner-image"></div>
-          </div>
-          <div class="col-lg-4 col-6">
+        <div class="row">
+            <div class="col-lg-8">
+              <div class="content-1">
+                <h6>Gut Health Screening</h6>
+            </div>
+            <div class="content-2 d-md-flex">
+              <s class="me-3">9900/-</s>
+              <p class="me-3">3999/-</p>
+              <p class="disc">40% off</p>
+            </div>
+            <div class="home-visit">
+              <h6>Diagnostic Service at Home</h6>
+              <span>Anytime, Anywhere</span>
+              <div class="time-content">
+                <div class="time-content-heading">
+                    <div class="time-content-txt">
+                        <p class="time-content-head">With in</p>
+                        <div class="line">
+                        </div>
+                    </div>
+                    <h3 class="time">
+                        <span>60</span> min
+                    </h3>
+                </div>
+                <div class="time-content-img">
+                    <img src="assets/images/clock.svg" loading="lazy" alt="clock">
+                </div>
+              </div>
+            </div>
+          </div>  
+          <div class="col-lg-4">
+            <div class="banner-image-wrapper">  
+              <div class="banner-image"></div>
+            </div>
             <div class="form-wrapper">
               <form class="form" action="#" method="post">
                 <div class="form-group my-2">
-                  <input type="text" name="username" id="name" class="name" placeholder="John Pritchet" required>
+                  <input type="text" name="username" id="name" class="name" placeholder="Full Name" required>
                   <span class="error"></span>
                 </div>
                 <div class="form-group">
-                  <input type="email" name="emailAdress" id="email" class="email" placeholder="john@gmail.com" required>
+                  <input type="email" name="emailAdress" id="email" class="email" placeholder="Email ID" required>
                   <span class="error"></span>
                 </div>
                 <div class="form-group my-2">
-                  <input type="text" name="phone" id="phone" class="phone" placeholder="+91 1234567890" required>
+                  <input type="text" name="phone" id="phone" class="phone" placeholder="Mobile Number" required>
                   <span class="error"></span>
                 </div>
                 <div class="form-group my-2">
-                  <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                  <select name="location" id="location" class="location" required>
+                    <option value="Select Location" default>Select Location</option>
+                    <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                    <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                    <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                    <option  value="Amylase-Serum">Amylase-Serum</option>
+                    <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                    <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                    <option value="IgG (Total)">IgG (Total)</option>
+                  </select>
+                  <span class="error"></span>
+                </div>
+                <div class="form-group my-2">
+                  <select name="tests" id="tests" class="tests" required>
+                    <option value="Select Test" default>Select Tests</option>
+                    <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                    <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                    <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                    <option  value="Amylase-Serum">Amylase-Serum</option>
+                    <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                    <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                    <option value="IgG (Total)">IgG (Total)</option>
+                  </select>
+                  <span class="error"></span>
                 </div>
                 <div class="CTA">
                   <input type="submit" value="Signup Now" id="submit">
@@ -772,7 +824,30 @@
                     <span class="error"></span>
                   </div>
                   <div class="form-group my-2">
-                    <textarea name="enquiry" placeholder="Write your message here..." id="" cols="40" rows="3"></textarea>
+                    <select name="location" id="location" class="location" required>
+                      <option value="Select Location" default>Select Location</option>
+                      <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                      <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                      <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                      <option  value="Amylase-Serum">Amylase-Serum</option>
+                      <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                      <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                      <option value="IgG (Total)">IgG (Total)</option>
+                    </select>
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group my-2">
+                    <select name="tests" id="tests" class="tests" required>
+                      <option value="Select Test" default>Select Tests</option>
+                      <option value="Complete Blood Count (CBC)">Complete Blood Count (CBC)</option>
+                      <option value=" Liver Function Test (LFT)"> Liver Function Test (LFT)</option>
+                      <option  value="Gamma Glutamyl Transferase(GGT)">Gamma Glutamyl Transferase(GGT)</option>
+                      <option  value="Amylase-Serum">Amylase-Serum</option>
+                      <option  value="H Pylori Antibody">H Pylori Antibody</option>
+                      <option value="Tissue Transglutaminase Antibody - IgG">Tissue Transglutaminase Antibody - IgG</option>
+                      <option value="IgG (Total)">IgG (Total)</option>
+                    </select>
+                    <span class="error"></span>
                   </div>
                   <div class="CTA">
                     <input type="submit" value="Signup Now" id="submit">
@@ -781,7 +856,7 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <h6>Your gut health is your gateway to vitality—take care of it, and it will take care of you</h6>         
+              <h6>Your gut health is your gateway to vitality-take care of it, and it will take care of you</h6>         
             </div>
           </div>
         </div>
