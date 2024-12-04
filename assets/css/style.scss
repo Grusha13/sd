@@ -249,16 +249,13 @@ header{
         overflow: hidden;
     }
         .banner-image-wrapper{
-            height: 450px;
-            width: 450px;
+            height: 345px;
+            width: 350px;
+            box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.102);
             border-radius: 24px;
-            border-left: solid;
-            border-bottom: solid;
-            border-width: 10px;
-            border-color: $primary-color;
             position: absolute;
-            right: 25%;
-            top: 4%;
+            right: 30%;
+            top: 13%;
             overflow: hidden;
             .banner-image{
                 background: url('../images/banner.webp');
@@ -266,7 +263,7 @@ header{
                 background-size: cover;
                 background-repeat: no-repeat;
                 height: 450px;
-                width: 450px;
+                width: 330px;
                 z-index: 0;
             }
         }
@@ -352,7 +349,15 @@ header{
         
         .form-wrapper{
             position: relative;
+            border-right: solid;
+            border-bottom: solid;
+            border-top: solid;
+            border-left: solid;
+            border-width: 1px 8px 8px 1px;
+            border-color: $primary-color;
+            border-radius: 18px;
             .form{
+                margin: 0 0 5px !important;
                 @include form;
             }
         }
@@ -402,7 +407,13 @@ header{
                 background-size: cover;
                 right: 0;
                 left: 0;
-                top: 0;
+                bottom: 0;
+                width: 100%;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                .banner-image{
+                    width: 100%;
+                }
             }
             .time-content{
                 position: relative;
@@ -546,7 +557,7 @@ header{
 #loadMore, #workMore, #packageMore, #whyMore, #careMore{
     position: relative;
     z-index: 1;
-    background-color: $primary-color;
+    background-color: $pink;
     border: 0;
     padding: 10px 15px;
     border-radius: 8px;
