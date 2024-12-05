@@ -350,6 +350,7 @@ header{
         
         .form-wrapper{
             position: relative;
+            width: 265px;
             .form{
                 @include form;
                 height: 410px;
@@ -359,6 +360,7 @@ header{
                 border-bottom: solid;
                 border-width: 10px;
                 border-color: $primary-color;
+                padding-top: 55px;
             }
         }
 
@@ -392,6 +394,7 @@ header{
                 font-size: 32px;
             }
             .form-wrapper{
+                width: 100%;
                 .form{
                     border-bottom: 0;
                     border-top-left-radius: 18px;
@@ -778,16 +781,39 @@ header{
             background-size: contain;
             height: 250px;
             background-repeat: no-repeat;
+            position: relative;
         }
         
         .title{
             margin: 20px 0 20px;
             h6{
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: $font-bold;
                 span{
                     color: $secondary-color;
                 }
+            }
+        }
+
+        .package-wrapper{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                right: 70%;
+                width: 400px;
+                top: 60%;
+                height: 1px;
+                rotate: 90deg;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 101, 72, 0) 100%);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .package-wrapper{
+            &::before{
+                display: none;
             }
         }
     }
