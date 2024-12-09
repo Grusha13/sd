@@ -60,53 +60,6 @@ body{
      }
 }
 
-// .package-fix{
-//     position: fixed;
-//     display: flex;
-//     top: 80px;
-//     left: 0;
-//     background: radial-gradient(78.49% 93.75% at 74.34% 6.25%,#646464 0,#3c3c3c 100%);
-//     color: $light;
-//     border-radius: 0 0 8px 8px;
-//     width: 100%;
-//     padding: 15px;
-//     z-index: 9;
-//     justify-content: center;
-//     h6{
-//         margin-bottom: 0;
-//         margin-right: 20px;
-//         font-weight: $font-bold;
-//         font-size: 18px;
-//     }
-//     s{
-//         margin-right: 10px;
-//         color: #d8d8d8;
-//     }
-//     .support{
-//         margin-left: 100px;
-//         a{
-//             text-decoration: none;
-//             padding: 10px 15px;
-//             border-radius: 8px;
-//             color: $secondary-color;
-//             font-weight: $font-bold;
-//             background-color: $light;
-//             i{
-//                 margin-right: 10px;
-//             }
-//             &:hover{
-//                 background-color: $secondary-color;
-//                 color: $light;
-//                 border: 1px solid $primary-color;
-//             }
-//         }
-//     }
-
-//     @media screen and (max-width: 768px) {
-//        display: none;
-//     }
-// }
-
 header{
     .navbar{
         height: 80px;
@@ -795,6 +748,17 @@ header{
             }
         }
 
+        .main-title{
+            margin-bottom: 20px;
+            h6{
+                font-size: 20px;
+                font-weight: $font-black;
+                span{
+                    color: $secondary-color;
+                }
+            }
+        }
+
         .package-wrapper{
             position: relative;
             &::before{
@@ -820,6 +784,11 @@ header{
     @media screen and (max-width: 767px) {
         .container{
             padding: 30px 20px;
+            .main-title{
+                h6{
+                    font-size: 20px;
+                }
+            }
             .image-wrapper{
                 height: 150px;
             }
